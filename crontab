@@ -1,0 +1,4 @@
+# 周一到周五 19:30 执行一次完整流水线
+30 19 * * 1-5 /app/schedule.sh >>/app/output/cron.log 2>&1
+# 如果想每 5 分钟测试一次，可以改成
+# */5 * * * * /app/schedule.sh >>/app/output/cron.log 2>&1
